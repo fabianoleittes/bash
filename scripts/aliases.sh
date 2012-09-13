@@ -32,6 +32,7 @@ alias brews='brew list -1'
 alias l="ls -Gl"
 # List all files colorized in long format, including dot files
 alias la="ls -Gla"
+
 # List only directories
 alias lsd='ls -l | grep "^d"'
 alias tu="top -o cpu" # cpu
@@ -43,6 +44,10 @@ alias cp="cp -i"
 alias mv="mv -i"
 alias rm="rm -i"
 alias pg="ps aux | grep"
+alias startmysql="mysql.server start"
+alias stopmysql="mysql.server stop"
+alias startmongo="mongod run --config /usr/local/etc/mongod.conf"
+alias stopmongo="killall mongod"
 
 # General #
 alias lserv="open http://localhost:8000 && python -m SimpleHTTPServer"
